@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+        <!-- add this to your header -->
+    <div id="google_translate_element"></div> 
+    <nav class="navbar">
+        <div class="logo">Kisan LinkedIn</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <select class="language-select">
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+            <option value="te">Telugu</option>
+        </select>
+    </nav>
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="home.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="content">
+        <h1>Empowering Farmers Through Digital Connections</h1>
+        <p>Kisan LinkedIn bridges the gap between farmers and agricultural experts, providing guidance on millet farming, modern techniques, and better market access—empowering farmers with knowledge and growth opportunities.</p>
+        <div class="button-container">
+            <a href="#" class="btn">Post Job</a>
+            <a href="#" class="btn">Find Work</a>
+        </div>
+    </div>
+    <div class="info-section">
+        <div class="info-box">
+            <img src="farmer-icon.png" alt="Farmer Icon">
+            <h2>What is Kisan LinkedIn?</h2>
+            <p>Kisan LinkedIn is a platform dedicated to millet farmers, providing them with expert guidance, disease detection tools, and best farming practices. We aim to empower farmers with the right knowledge, connect them with markets, and ensure a prosperous future.</p>
+        </div>
+        <div class="info-box">
+            <img src="company-icon.png" alt="Company Icon">
+            <h2>Why Farmers Choose Kisan LinkedIn?</h2>
+            <p>Kisan LinkedIn provides farmers with direct access to expert advice, better market reach, and advanced millet farming techniques. Our platform helps farmers grow high-quality crops and find better selling opportunities, ensuring a prosperous agricultural future.</p>
+            <a href="#" class="learn-more">LEARN MORE →</a>
+        </div>
+        <div class="info-box">
+            <img src="company-icon.png" alt="Company Icon">
+            <h2>Why Businesses Choose Kisan LinkedIn?</h2>
+            <p>Companies can connect with experienced farmers to source high-quality produce and sustainable agricultural solutions. Our platform makes procurement efficient, cost-effective, and transparent, helping businesses grow while supporting farmers.</p>
+            <a href="#" class="learn-more">LEARN MORE →</a>
+        </div>
+    </div>
+
+
+    <button id = "click">Click</button>
+<!-- to your js part -->
+
+    <script src="script.js"></script>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        } 
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
